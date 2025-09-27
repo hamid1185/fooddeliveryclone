@@ -361,4 +361,12 @@ button:active, .btn:active {
   button {
     width: 100%;
   }
+  
+  table {
+    font-size: 0.9rem;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+  }
 }
