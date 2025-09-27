@@ -2,17 +2,17 @@
 require_once 'config/session.php';
 
 // Redirect if already logged in
-if (isLoggedIn()) {
+if (isLoggedIn() && isset($_SESSION['role'])) {
     $role = $_SESSION['role'];
     switch($role) {
         case 'customer':
-            header("Location: /customer/dashboard.php");
+            header("Location: customer/dashboard.php");
             break;
         case 'restaurant':
-            header("Location: /restaurant/dashboard.php");
+            header("Location: restaurant/dashboard.php");
             break;
         case 'admin':
-            header("Location: /admin/dashboard.php");
+            header("Location: admin/dashboard.php");
             break;
     }
     exit;
