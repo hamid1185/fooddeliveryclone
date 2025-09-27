@@ -1,0 +1,52 @@
+@@ .. @@
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   .dashboard-header {
+     flex-direction: column;
+     gap: 1rem;
+   }
+   
+   .search-bar {
+     margin-left: 0;
+     max-width: 100%;
+   }
+   
+   .restaurant-header {
+     flex-direction: column;
+     gap: 0.5rem;
+   }
+   
+   .restaurant-actions {
+     flex-direction: column;
+   }
+   
+   .menu-item-card {
+     flex-direction: column;
+     gap: 1rem;
+   }
+   
+   .menu-item-actions {
+     flex-direction: row;
+     min-width: auto;
+     justify-content: space-between;
+   }
+   
+   .menu-categories {
+     justify-content: flex-start;
+     overflow-x: auto;
+     padding-bottom: 0.5rem;
+   }
+   
+   .category-btn {
+     flex-shrink: 0;
+   }
++  
++  .cart-item-controls {
++    flex-direction: column;
++    gap: 0.5rem;
++  }
++  
++  .quantity-controls {
++    flex-direction: row;
++  }
+ }
